@@ -1,0 +1,16 @@
+server:
+  port: 8400
+spring:
+  profiles:
+    active: dev
+zuul:
+  routes:
+    kyj-cloud-consumer: /consumer/**
+    kyj-cloud-provider: /provider/**
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 80000
