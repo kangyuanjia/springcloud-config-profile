@@ -5,8 +5,8 @@ spring:
     active: dev
 zuul:
   routes:
-    kyj-cloud-consumer: /consumer2/**
-    kyj-cloud-provider: /provider2/**
+    kyj-cloud-consumer: /consumer/**
+    kyj-cloud-provider: /provider/**
 hystrix:
   command:
     default:
