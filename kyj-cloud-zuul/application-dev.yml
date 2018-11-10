@@ -3,10 +3,10 @@ server:
 spring:
   profiles:
     active: dev
-zuul:
-  routes:
-    kyj-cloud-consumer: /consumer/**
-    kyj-cloud-provider: /provider/**
+#zuul:
+#  routes:
+#    kyj-cloud-consumer: /consumer/**
+#    kyj-cloud-provider: /provider/**
 hystrix:
   command:
     default:
