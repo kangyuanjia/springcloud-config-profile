@@ -1,0 +1,6 @@
+server:
+  port: 8400
+zuul:
+  routes:
+    springcloud-consume-config: /consumer/**
+    springcloud-provider-config: /provider/**

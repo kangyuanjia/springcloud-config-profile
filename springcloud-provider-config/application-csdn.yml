@@ -1,0 +1,28 @@
+spring:
+#   redis:
+#     host: 172.17.0.1
+#     #assword: 123456
+#     port: 6379
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    druid:
+      url: jdbc:mysql://13.58.87.174:3306/spcloud
+      username: root
+      password: booszy
+  application:
+    name: springcloud-provider-config
+  profiles:
+    active: test
+logging:
+  level:
+    root: info
+    org.hibernate : info
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
+    com.yasaka.stock : debug
+server:
+  port: 8100
